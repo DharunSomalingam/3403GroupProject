@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Roster</title>
+</head>
+<body>
 
+<!-- Navbar Section -->
+<nav class="navbar navbar-expand-sm sticky-top navbar-bgcolor">
+    <div class="container">
+        <!-- Logo Link -->
+        <a class="navbar-brand" href="index.html">
+            <img class="logo" src="../static/images/event-title.png" alt="logo">
+        </a>
+
+        <!-- Toggler for responsive collapse -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myList"
+                aria-controls="myList" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="myList">
+            <ul class="navbar-nav mx-auto">
+                <!-- Navigation Items -->
+                <li class="nav-item active nav1">
+                    <a class="nav-link" href="admin_dashboard.html">Home</a>
+                </li>
+                <li class="nav-item nav1">
+                    <a class="nav-link" href="activity_management.html">Activity Management</a>
+                </li>
+                <li class="nav-item nav1">
+                    <a class="nav-link" href="view_timetable_admin.html">View Timetable</a>
+                </li>
+                <li class="nav-item nav1">
+                    <a class="nav-link" href="admin_login.html">Logout</a>
+                </li>
+            </ul>
+
+            <!-- Notification and Welcome Text -->
+            <ul class="navbar-nav">
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link" href="#">
+                        <i class="fa-regular fa-bell fs-5"></i> <!-- Notification Icon -->
+                    </a>
+                </li>
+                <li class="nav-item nav2">
+                    <a class="nav-link" href="#">
+                        Welcome <span style="color:#FC0C0C">Admin</span>,<br>weishenadmin
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<br>
+<div class="container mt-4">
+    <h1 align="center">View TimeTable</h1>
+
+    <!-- Club and Date Form -->
+    <nav>
+        <form class="d-flex flex-column -left mt-4">
+            <div class="col-md-1 mb-2">
+                <br>
+                <label for="club"><h4>FootBall</h4></label> <!-- Activity Label -->
+            </div>
+            <div class="col-md-9 mb-2">
+                <input type="text" id="club" name="Date" value="24/03/25 - 27/06/25"> <!-- Date Range -->
+            </div>
+        </form>
+
+        <!-- Share and Edit Form -->
+        <form class="d-flex mt-4">
+            <div class="row w-100 rounded shadow pt-3">
+                <!-- Username Input -->
+                <div class="col-md-4 justify-content-end align-items">
+                    <label for="username" class="form-label"><strong>Username / Email</strong></label>
+                    <input type="text" id="username" name="username" class="form-control">
+                </div>
+                <!-- Share Button -->
+                <div class="edit col-md-4 justify-content-end align-items-end mt-4" style="background-color: #f8f9fa;">
+                    <button type="submit" class="btn btn-primary user-share-button w-25">Share</button>
+                </div>
+                <!-- Edit Button -->
+                <div class="col-md-4 d-flex justify-content-end align-items-end mb-2">
+                    <button type="button" class="btn btn-primary user-edit-button w-25">Edit</button>
+                </div>
+            </div>
+        </form>
+    </nav>
+
+    <!-- Timetable Table -->
+    <br>
+    <div class="table-responsive mt-4">
+        <table class="table table-bordered text-center" border="1" align="center" cellspacing="0" cellpadding="9" width="95%">
+            <!-- Table Header -->
+            <thead class="table-light">
+            <tr>
+                <th style="width: 7%"></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+            </thead>
+            <!-- Time Slots -->
+            <tr class="rostercells"><td>09:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr class="rostercells"><td>10:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr class="rostercells"><td>11:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr class="rostercells"><td>12:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr class="rostercells"><td>13:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr class="rostercells"><td>14:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr class="rostercells"><td>15:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr class="rostercells"><td>16:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr class="rostercells"><td>17:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr class="rostercells"><td>18:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr class="rostercells"><td>19:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        </table>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="col text-end">
+        <button type="submit" class="btn btn-primary user-submit-button w-25">Submit</button>
+    </div>
+    <br>
+</div>
+
+</body>
+</html>
